@@ -22,11 +22,11 @@ syntax match wikidotTable '||\~\?'
 syntax match wikidotSeparator '-\{4,}'
 syntax match wikidotColor '##\(#\?\w\+|\)\?'
 
-syntax region wikidotBold matchgroup=wikidotBold start='\*\*' end='\*\*'
-syntax region wikidotItalic matchgroup=wikidotItalic start='//' end='//'
-syntax region wikidotUnderline matchgroup=wikidotUnderline start='__' end='__'
-syntax region wikidotBoldUnderline matchgroup=wikidotBoldUnderline start='\(\*\*__\|__\*\*\)' end='\(\*\*__\|__\*\*\)'
-syntax region wikidotBoldItalic matchgroup=wikidotBoldItalic start='\(\*\*\/\/\|\/\/\*\*\)' end='\(\*\*\/\/\|\/\/\*\*\)'
+syntax region wikidotBold matchgroup=wikidotBold start='\*\*' end='\*\*' oneline
+syntax region wikidotItalic matchgroup=wikidotItalic start='//' end='//' oneline
+syntax region wikidotUnderline matchgroup=wikidotUnderline start='__' end='__' oneline
+syntax region wikidotBoldUnderline matchgroup=wikidotBoldUnderline start='\(\*\*__\|__\*\*\)' end='\(\*\*__\|__\*\*\)' oneline
+syntax region wikidotBoldItalic matchgroup=wikidotBoldItalic start='\(\*\*\/\/\|\/\/\*\*\)' end='\(\*\*\/\/\|\/\/\*\*\)' oneline
 
 syntax region wikidotH1 matchgroup=wikidotH1 start='^\s*+' end='$' keepend oneline contains=wikidotComment,wikidotLink,wikidotColor
 syntax region wikidotH2 matchgroup=wikidotH2 start='^\s*++' end='$' keepend oneline contains=wikidotComment,wikidotLink,wikidotColor
