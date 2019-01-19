@@ -22,6 +22,8 @@ syntax match wikidotTable '||\~\?'
 syntax match wikidotSeparator '-\{4,}'
 syntax match wikidotColor '##\(#\?\w\+|\)\?'
 
+syntax region wikidotRaw matchgroup=wikidotRaw start='@@' end='@@' oneline
+
 syntax region wikidotBold matchgroup=wikidotBold start='\*\*' end='\*\*' oneline
 syntax region wikidotItalic matchgroup=wikidotItalic start='//' end='//' oneline
 syntax region wikidotUnderline matchgroup=wikidotUnderline start='__' end='__' oneline
@@ -49,6 +51,8 @@ highlight default link wikidotBullet Statement
 highlight default link wikidotTable Statement
 highlight default link wikidotSeparator PreProc
 highlight default link wikidotColor Statement
+
+highlight default link wikidotRaw PreProc
 
 highlight default link wikidotBold Bold
 highlight default link wikidotItalic Italic
