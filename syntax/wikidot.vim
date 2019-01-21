@@ -21,7 +21,7 @@ syntax match wikidotBullet '^\s*\* '
 syntax match wikidotTable '||\~\?'
 syntax match wikidotSeparator '-\{4,}'
 syntax match wikidotColor '##\(#\?\w\+|\)\?'
-syntax match wikidotQuoteBlock '^>\+'
+syntax match wikidotQuoteBlock '^>\+ '
 syntax match wikidotAlign '^='
 
 syntax region wikidotRaw matchgroup=wikidotRaw start='@@' end='@@' oneline
