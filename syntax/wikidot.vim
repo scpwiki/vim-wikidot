@@ -21,6 +21,7 @@ syntax match wikidotBullet '^\s*\* '
 syntax match wikidotTable '||\~\?'
 syntax match wikidotSeparator '-\{4,}'
 syntax match wikidotColor '##\(#\?\w\+|\)\?'
+syntax match wikidotQuoteBlock '^>\+'
 syntax match wikidotAlign '^='
 
 syntax region wikidotRaw matchgroup=wikidotRaw start='@@' end='@@' oneline
@@ -52,6 +53,7 @@ highlight default link wikidotBullet Statement
 highlight default link wikidotTable Statement
 highlight default link wikidotSeparator PreProc
 highlight default link wikidotColor Statement
+highlight default link wikidotQuoteBlock Type
 highlight default link wikidotAlign Statement
 
 highlight default link wikidotRaw PreProc
