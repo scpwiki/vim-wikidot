@@ -16,7 +16,7 @@ unlet! b:current_syntax
 
 syntax match wikidotComment '\[!--.*--\]'
 syntax match wikidotElement '\[\[\([^\]]\|\n\)\+\]\]'
-syntax match wikidotLink '\(\[\[\[\([^\]]\|\n\)\+\]\]\]\|\[\w\+:\/\/\w\+\.\w\+.*\]\)'
+syntax match wikidotLink '\(\[\[\[\([^\]]\|\n\)\+\]\]\]\|\[\w\+:\/\/\w\+\.\w\+[^\]]*\]\)'
 syntax match wikidotBullet '^\s*\* '
 syntax match wikidotTable '||\~\?'
 syntax match wikidotSeparator '-\{4,}'
