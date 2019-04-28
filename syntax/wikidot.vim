@@ -20,11 +20,13 @@ syntax match wikidotLink '\(\[\[\[\([^\]]\|\n\)\+\]\]\]\|\[\w\+:\/\/\w\+\.\w\+[^
 syntax match wikidotBullet '^\s*\* '
 syntax match wikidotTable '||\~\?'
 syntax match wikidotSeparator '-\{4,}'
+syntax match wikidotClearFloat '\~\{4,}\(<\|=\|>\)\?'
 syntax match wikidotColor '##\(#\?\w\+|\)\?'
 syntax match wikidotQuoteBlock '^>\+ '
 syntax match wikidotAlign '^='
 
 syntax region wikidotRaw matchgroup=wikidotRaw start='@@' end='@@' oneline
+syntax region wikidotRaw matchgroup=wikidotRawLegacy start='``' end='``' oneline
 
 syntax region wikidotBold matchgroup=wikidotBold start='\*\*' end='\*\*' oneline
 syntax region wikidotItalic matchgroup=wikidotItalic start='//' end='//' oneline
@@ -57,6 +59,7 @@ highlight default link wikidotQuoteBlock Type
 highlight default link wikidotAlign Statement
 
 highlight default link wikidotRaw PreProc
+highlight default link wikidotRawLegacy PreProc
 
 highlight default link wikidotBold Bold
 highlight default link wikidotItalic Italic
