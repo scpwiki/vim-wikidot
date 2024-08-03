@@ -6,10 +6,10 @@ Available under the terms of the MIT License.
 ### Installation
 Using [Vundle](https://github.com/gmarik/vundle), add this to your `.vimrc`:
 ```vim
-Plugin 'nu-scptheme/vim-wikidot'
+Plugin 'scpwiki/vim-wikidot'
 ```
 
 Using [Pathogen](https://github.com/tpope/vim-pathogen), run this command in your shell:
 ```sh
-git clone https://github.com/nu-scptheme/vim-wikidot.git ~/.vim/bundle/vim-wikidot
+git clone https://github.com/scpwiki/vim-wikidot.git ~/.vim/bundle/vim-wikidot
 ```
