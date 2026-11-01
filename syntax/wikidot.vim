@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     Wikidot Syntax
-" Maintainer:   Ammon Smith <ammon.i.smith@gmail.com>
-" Filenames:    *.wikidot
+" Maintainer:   SCP-EN Technical Team (tech@scpwiki.com)
+" Filenames:    *.wikidot *.ftml
 " Last Change:  2019 January
 
 if exists("b:current_syntax")
